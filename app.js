@@ -14,11 +14,11 @@ button.addEventListener("click",()=>{
     if(differenceinprices>0){
         var profit= differenceinprices;
         var profitpercentage = (profit/initial)*100
-        output.innerText = "you got a profit of "+profit*quantity+" and the profit percentage is "+profitpercentage;
+        output.innerText = "You got a profit of "+profit*quantity+" and the profit percentage is "+profitpercentage;
     }else{
         var loss= differenceinprices*-1;
         var losspercentage = (loss/initial)*100
-        output.innerText = "you got a loss of "+loss*quantity+" and the loss percentage is "+losspercentage;
+        output.innerText = "You got a loss of "+loss*quantity+" and the loss percentage is -"+losspercentage;
     }
 
     //console.log(initial.value,quantity.value ,current.value);
