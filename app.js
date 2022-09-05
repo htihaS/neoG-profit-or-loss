@@ -4,6 +4,7 @@ var currentprice = document.querySelector(".current-price");
 
 var button = document.querySelector(".submit");
 var output = document.querySelector(".output");
+var container = document.querySelector(".container");
 
 button.addEventListener("click",()=>{
     var initial = Number(initialprice.value);
@@ -14,10 +15,12 @@ button.addEventListener("click",()=>{
     if(differenceinprices>0){
         var profit= differenceinprices;
         var profitpercentage = (profit/initial)*100
+        container.style.backgroundColor = 'green';
         output.innerText = "You got a profit of "+profit*quantity+" and the profit percentage is "+profitpercentage;
     }else{
         var loss= differenceinprices*-1;
         var losspercentage = (loss/initial)*100
+        container.style.backgroundColor = 'red';
         output.innerText = "You got a loss of "+loss*quantity+" and the loss percentage is -"+losspercentage;
     }
 
