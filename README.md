@@ -1,5 +1,8 @@
 # neoG-profit-or-loss!
 
+# HTML-CSS-JS
+
+
 A website which helps user how much profit or loss he/she is making in percentage & absolute value
 Enter initial stock price
 Enter quantity 
